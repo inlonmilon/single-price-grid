@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    padding: 3rem 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font: 11px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 768px;
+    overflow: hidden;
+
+}
+
+#primeira{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: span 2;
+    padding: 3rem;
+    color: hsl(218, 22%, 67%);
+}
+
+#primeira h1{
+    color: hsl(179, 62%, 43%);
+}
+
+#primeira span{
+    display: block;
+    color: hsl(71, 73%, 54%);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1rem 0 .5rem ;
+}
+
+#primeira p{
+    font-size: 16px;
+
+}
+
+#segunda{
+    background-color: #2bb3b1;
+    padding: 3rem;
+    color: hsl(204, 43%, 93%);
+}
+
+#segunda p{
+    margin: 0 0 1rem;
+}
+
+#terceira{
+    background-color: #4abebd;
+    padding: 3rem;
+    color: hsl(204, 43%, 93%);
+}
+
+#terceira ul{
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#preco{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0 .5rem 0;
+}
+
+#preco span{
+    opacity: 0.6;
+}
+
+#preco h1{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+
+    }
+
+    #primeira{
+        grid-column: auto;
+        padding: 2rem;
+    }
+
+    #segunda, #terceira{
+        padding: 2rem;
+    }
+
+    #primeira h1{
+        font-size: 1.5rem;
+    }
+    #primeira span{
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    #primeira p{
+        line-height: 1.5;
+    }
+
+    
+
+
+}
+
+
+
